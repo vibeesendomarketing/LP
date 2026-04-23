@@ -13,7 +13,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+// Versão manual do Lucide (sem eval)
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('[data-lucide]').forEach(function(el) {
+    var iconName = el.getAttribute('data-lucide');
+    if (iconName === 'arrow-right') {
+      el.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>';
+    }
+  });
+});
+</script>
   <style>
     @font-face {
   font-family: 'Co Headline';
