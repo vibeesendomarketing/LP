@@ -4,37 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vibees — Endomarketing colaborativo</title>
-  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="https://vibeesendomarketing.github.io/LP/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="https://vibeesendomarketing.github.io/LP/favicon.svg" />
+  <link rel="shortcut icon" href="https://vibeesendomarketing.github.io/LP/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://vibeesendomarketing.github.io/LP/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Vibees" />
-  <link rel="manifest" href="site.webmanifest" />
+  <link rel="manifest" href="https://vibeesendomarketing.github.io/LP/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <style>
     @font-face {
-  font-family: 'Co Headline';
-  src: url('https://SEU-USERNAME.github.io/SEU-REPO/fonts/CoHeadline-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Co Headline';
-  src: url('https://SEU-USERNAME.github.io/SEU-REPO/fonts/CoHeadline-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Co Headline';
-  src: url('https://SEU-USERNAME.github.io/SEU-REPO/fonts/CoHeadline-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
+      font-family: 'Co Headline';
+      src: url('https://vibeesendomarketing.github.io/LP/fonts/CoHeadline.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -223,11 +209,6 @@
     .clients-eyebrow::before,
     .clients-eyebrow::after {
       content: ''; display: inline-block; width: 24px; height: 1px; background: var(--cream);
-    }
-    .clients-subtitle {
-      font-size: 13px; color: rgba(255,255,255,0.55);
-      margin: 6px 0 0; font-family: var(--f-body);
-      letter-spacing: 0.02em;
     }
     .ticker-track {
       display: flex; gap: 80px; width: max-content; align-items: center;
@@ -441,12 +422,12 @@
     }
     .member-photo img {
       width: 100%; height: 100%; object-fit: cover; object-position: top;
-      display: block; transition: transform .4s, filter .4s;
-      filter: none;
+      display: block; transition: transform .4s;
+      filter: sepia(0.6) saturate(1.8) hue-rotate(-15deg);
     }
     .team-card:hover .member-photo img { 
       transform: scale(1.04); 
-      filter: grayscale(0);
+      filter: none;
     }
     .member-placeholder {
       width: 100%; height: 100%;
@@ -503,7 +484,6 @@
       font-size: 15px; color: rgba(250,246,240,.55);
       line-height: 1.7; font-weight: 300; margin-top: 20px;
     }
-    .form-intro p strong { color: rgba(250,246,240,.85); font-weight: 700; }
     .form-fields { display: flex; flex-direction: column; gap: 20px; }
     .field-label {
       display: block; font-size: 11px; font-weight: 700;
@@ -653,10 +633,7 @@
         <div class="hero-visual">
           <div class="hero-line"></div>
           <div class="hero-img-frame">
-            <img
-              src="https://images.unsplash.com/photo-1680597074132-d9ed11f0ea58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-              alt="Equipe Vibees"
-            />
+            <img src="https://vibeesendomarketing.github.io/LP/hero-vibees.webp" alt="Equipe Vibees" />
             <div class="hero-stat">
               <span class="hero-stat-num">14+</span>
               <span class="hero-stat-label">Anos de mercado</span>
@@ -672,42 +649,43 @@
         <span class="clients-eyebrow">Nossos clientes</span>
       </div>
       <div class="ticker-track">
-        <div class="ticker-item"><img src="https://i.ibb.co/wfTd3Bx/amgen.png" alt="Amgen"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/DD4Sxb19/brde.png" alt="BRDE"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/FPb43L1/ceva.png" alt="Ceva"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/mCzv9bPG/cfl.png" alt="CFL"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/pv737df3/dll.png" alt="DLL"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/x8m4fNB8/docile.png" alt="Docile"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/5XGDqkyx/fami.png" alt="Fami"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/xKh2j579/galeria-das-lonas.png" alt="Galeria das Lonas"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/RTsvTQnH/hertz.png" alt="Hertz"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/F4S1ZyND/ich.png" alt="ICH"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/7xZqVYxw/kepler-weber.png" alt="Kepler Weber"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/rRq6TJ9h/oleoplan.png" alt="Oleoplan"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/5xkG7hSy/piccadilly.png" alt="Piccadilly"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/DHghz0S3/takeda.png" alt="Takeda"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/twZSSVDb/topazio.png" alt="Topazio"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/0y9sJ1ZN/unifertil.png" alt="Unifertil"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/LDXPhT6g/vigor.png" alt="Vigor"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/B2S2F868/vitlog.png" alt="Vitlog"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/wfTd3Bx/amgen.png" alt="Amgen"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/DD4Sxb19/brde.png" alt="BRDE"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/FPb43L1/ceva.png" alt="Ceva"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/mCzv9bPG/cfl.png" alt="CFL"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/pv737df3/dll.png" alt="DLL"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/x8m4fNB8/docile.png" alt="Docile"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/5XGDqkyx/fami.png" alt="Fami"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/xKh2j579/galeria-das-lonas.png" alt="Galeria das Lonas"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/RTsvTQnH/hertz.png" alt="Hertz"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/F4S1ZyND/ich.png" alt="ICH"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/7xZqVYxw/kepler-weber.png" alt="Kepler Weber"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/rRq6TJ9h/oleoplan.png" alt="Oleoplan"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/5xkG7hSy/piccadilly.png" alt="Piccadilly"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/DHghz0S3/takeda.png" alt="Takeda"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/twZSSVDb/topazio.png" alt="Topazio"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/0y9sJ1ZN/unifertil.png" alt="Unifertil"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/LDXPhT6g/vigor.png" alt="Vigor"></div>
-        <div class="ticker-item"><img src="https://i.ibb.co/B2S2F868/vitlog.png" alt="Vitlog"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/amgen.webp" alt="Amgen"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/brde.webp" alt="BRDE"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/ceva.webp" alt="Ceva"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/cfl.webp" alt="CFL"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/dll.webp" alt="DLL"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/docile.webp" alt="Docile"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/fami.webp" alt="Fami"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/galeria-das-lonas.webp" alt="Galeria das Lonas"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/hertz.webp" alt="Hertz"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/ich.webp" alt="ICH"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/kepler-weber.webp" alt="Kepler Weber"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/oleoplan.webp" alt="Oleoplan"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/piccadilly.webp" alt="Piccadilly"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/takeda.webp" alt="Takeda"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/topazio.webp" alt="Topazio"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/unifertil.webp" alt="Unifertil"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/vigor.webp" alt="Vigor"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/vitlog.webp" alt="Vitlog"></div>
+        <!-- repeat for infinite effect -->
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/amgen.webp" alt="Amgen"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/brde.webp" alt="BRDE"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/ceva.webp" alt="Ceva"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/cfl.webp" alt="CFL"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/dll.webp" alt="DLL"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/docile.webp" alt="Docile"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/fami.webp" alt="Fami"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/galeria-das-lonas.webp" alt="Galeria das Lonas"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/hertz.webp" alt="Hertz"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/ich.webp" alt="ICH"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/kepler-weber.webp" alt="Kepler Weber"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/oleoplan.webp" alt="Oleoplan"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/piccadilly.webp" alt="Piccadilly"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/takeda.webp" alt="Takeda"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/topazio.webp" alt="Topazio"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/unifertil.webp" alt="Unifertil"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/vigor.webp" alt="Vigor"></div>
+        <div class="ticker-item"><img src="https://vibeesendomarketing.github.io/LP/vitlog.webp" alt="Vitlog"></div>
       </div>
     </section>
 
@@ -782,7 +760,7 @@
       <div class="section-wrap">
         <div class="about-inner">
           <div class="about-img-wrap" id="about-img">
-            <img class="about-img" src="https://i.ibb.co/Kc3QV4XV/Time.jpg" alt="Time" />
+            <img class="about-img" src="https://vibeesendomarketing.github.io/LP/time-vibees.webp" alt="Time Vibees" />
             <div class="about-year-tag">Desde 2012</div>
           </div>
           <div class="about-content" id="about-content">
@@ -820,112 +798,112 @@
         <div class="carousel-wrap" id="carouselWrap">
           <div class="carousel-track" id="teamTrack">
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/1VJqQPq/Gisele-M-Bernardon.jpg" alt="Gisele M. Bernardon" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/gisele-bernardon.webp" alt="Gisele Bernardon" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Gisele Bernardon</div>
                 <div class="team-desc">Sócia</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/9m7RNkT7/Carolina-Leite-Porto.jpg" alt="Carolina Leite Porto" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/carolina-porto.webp" alt="Carolina Porto" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Carolina Porto</div>
                 <div class="team-desc">Head de atendimento</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/bRGP4N4x/Alessandra-Godoy-Menger.jpg" alt="Alessandra Godoy Menger" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/alessandra-menger.webp" alt="Alessandra Menger" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Alessandra Menger</div>
                 <div class="team-desc">Head de criação</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/vCK7rBSw/J-lia-De-Mello-Cl-udio.jpg" alt="Júlia De Mello Cláudio" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/julia-claudio.webp" alt="Júlia Cláudio" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Júlia Cláudio</div>
                 <div class="team-desc">Executiva de contas</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/rRThTDD5/aaa.jpg" alt="Ana Carolina Stefanello" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/ana-carolina-stefanello.webp" alt="Ana Carolina Stefanello" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Ana Carolina Stefanello</div>
                 <div class="team-desc">Executiva de contas</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/1JptKSQ3/IMG-1952.jpg" alt="Laura Koenen" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/laura-koenen.webp" alt="Laura Koenen" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Laura Koenen</div>
                 <div class="team-desc">Executiva de contas</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/dw3nFgYn/IMG-1954.jpg" alt="Juliana Barbosa Elkfury" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/juliana-elkfury.webp" alt="Juliana Elkfury" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Juliana Elkfury</div>
                 <div class="team-desc">Executiva de contas</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><div class="member-placeholder">LF</div></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/larissa-flores.webp" alt="Larissa Flores" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Larissa Flores</div>
                 <div class="team-desc">Assistente de atendimento</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/ZnJVWbp/Adriane-villa-De-Almeida.jpg" alt="Adriane Ávilla De Almeida" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/adriane-almeida.webp" alt="Adriane Almeida" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Adriane Almeida</div>
                 <div class="team-desc">Produtora</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/9Q1XLzm/Tatiana-Soares-Magalh-es.jpg" alt="Tatiana Soares Magalhães" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/tatiana-soares.webp" alt="Tatiana Soares" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Tatiana Soares</div>
                 <div class="team-desc">Diretora de Arte</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/dwD2JNVz/Luan-Leonardi-Bitencourt.jpg" alt="Luan Leonardi Bitencourt" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/luan-bitencourt.webp" alt="Luan Bitencourt" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Luan Bitencourt</div>
                 <div class="team-desc">Diretor de Arte</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/RT12wLcc/Leonardo-Azevedo-Soares.jpg" alt="Leonardo Azevedo Soares" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/leonardo-soares.webp" alt="Leonardo Soares" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Leonardo Soares</div>
                 <div class="team-desc">Diretor de Arte</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/nN4PCdtF/Jo-o-Alberto-Becker-Pinto.jpg" alt="João Alberto Becker Pinto" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/joao-alberto-pinto.webp" alt="João Alberto Pinto" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">João Alberto Pinto</div>
                 <div class="team-desc">Diretor de Arte</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/FL23ZJjh/Ricardo-Lima-Do-Amaral.jpg" alt="Ricardo Lima Do Amaral" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/ricardo-amaral.webp" alt="Ricardo Amaral" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Ricardo Amaral</div>
                 <div class="team-desc">Redator</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/kkT6YrJ/Leonardo-Maliszewski.jpg" alt="Leonardo Maliszewski Da Rosa" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/leonardo-maliszewski.webp" alt="Leonardo Maliszewski" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Leonardo Maliszewski</div>
                 <div class="team-desc">Redator</div>
               </div>
             </div>
             <div class="team-card">
-              <div class="member-photo"><img src="https://i.ibb.co/tTfs7DRG/Giana-Marcon-Milani.jpg" alt="Giana Marcon Milani" loading="lazy" /></div>
+              <div class="member-photo"><img src="https://vibeesendomarketing.github.io/LP/giana-milani.webp" alt="Giana Milani" loading="lazy" /></div>
               <div class="member-info">
                 <div class="team-role">Giana Milani</div>
                 <div class="team-desc">Jornalista</div>
@@ -1047,7 +1025,7 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const hamburger = document.getElementById('hamburger');
@@ -1066,7 +1044,6 @@
     }));
 
     // Scroll reveal
-    // service cards reveal
     const obs = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -1078,7 +1055,7 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.service-card').forEach(c => obs.observe(c));
 
-    // ── team carousel ──
+    // team carousel
     (function () {
       const wrap    = document.getElementById('carouselWrap');
       const track   = document.getElementById('teamTrack');
@@ -1089,20 +1066,17 @@
       const PER     = window.innerWidth < 768 ? 2 : 4;
       let   current = 0;
 
-      // Máximo de offset: garante que o último card fique rente à margem direita
       function maxOffset() {
         const wrapW = wrap.offsetWidth;
         const trackW = track.scrollWidth;
         return Math.max(0, trackW - wrapW);
       }
 
-      // Quantos "steps" de PER cards cabem, sem ultrapassar maxOffset
       function totalSteps() {
         const cardW = cards[0].offsetWidth;
         return Math.ceil((cards.length - PER) / PER) + 1;
       }
 
-      // dots
       function buildDots() {
         dotsEl.innerHTML = '';
         const t = totalSteps();
@@ -1119,7 +1093,6 @@
         current = Math.max(0, Math.min(step, t - 1));
 
         const cardW  = cards[0].offsetWidth;
-        // No último step, alinhar pelo fim — último card rente à margem direita
         let offset;
         if (current >= t - 1) {
           offset = maxOffset();
@@ -1139,7 +1112,6 @@
 
       window.addEventListener('resize', () => { current = 0; buildDots(); go(0); });
 
-      // trackpad swipe horizontal
       let wheelTimer = null;
       wrap.addEventListener('wheel', function(e) {
         if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
@@ -1151,7 +1123,6 @@
         }, 50);
       }, { passive: false });
 
-      // touch swipe
       let tx = 0;
       wrap.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
       wrap.addEventListener('touchend', e => {
@@ -1162,7 +1133,6 @@
       buildDots();
       go(0);
 
-      // reveal
       new IntersectionObserver(function(entries) {
         if (!entries[0].isIntersecting) return;
         cards.forEach(function(c, i) {
