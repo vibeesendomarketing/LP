@@ -242,7 +242,9 @@ document.addEventListener('DOMContentLoaded', function() {
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
     }
-    .ticker-track:hover { animation-play-state: paused; }
+    @media (hover: hover) {
+      .ticker-track:hover { animation-play-state: paused; }
+    }
     @keyframes ticker {
       from { transform: translate3d(0, 0, 0); }
       to   { transform: translate3d(-50%, 0, 0); }
