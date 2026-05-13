@@ -217,7 +217,8 @@ document.addEventListener('DOMContentLoaded', function() {
     /* ── TICKER ── */
     #clients {
       padding: 36px 0;
-      background:; overflow: hidden;
+      background: var(--cream);
+      overflow: hidden;
       position: relative;
     }
     .clients-header {
@@ -236,12 +237,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     .ticker-track {
       display: flex; gap: 80px; width: max-content; align-items: center;
-      animation: ticker 80s linear infinite;
+      animation: ticker 120s linear infinite;
+      will-change: transform;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     }
     .ticker-track:hover { animation-play-state: paused; }
     @keyframes ticker {
-      from { transform: translateX(0); }
-      to   { transform: translateX(-50%); }
+      from { transform: translate3d(0, 0, 0); }
+      to   { transform: translate3d(-50%, 0, 0); }
     }
     .ticker-item {
       display: flex; align-items: center;
@@ -1245,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     })();
 
-    lucide.createIcons();
+    // lucide nao foi carregado — substituicao manual no <head> ja cobre os icones
   </script>
 </body>
 </html>
